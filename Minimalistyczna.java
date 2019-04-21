@@ -1,6 +1,6 @@
 import java.util.Map;
 
-public class Minimalistyczna extends Strategia {
+public class Minimalistyczna extends Zachłanna {
 
     private int indeksNajkrótszegoPręta(CennikPrętów cennikPrętów, int i,
                                         int długośćOdcinka) {
@@ -10,8 +10,8 @@ public class Minimalistyczna extends Strategia {
         return i;
     }
 
-    public Wynik rozwiążProblem(CennikPrętów cennikPrętów,
-                               OpisProjektu opisProjektu) {
+    @Override
+    public Wynik rozwiążProblem(CennikPrętów cennikPrętów, OpisProjektu opisProjektu) {
         Wynik wynik = new Wynik();
         Map<Integer, Integer> mapaOdcinków = opisProjektu.getMapaOdcinków();
         int sumaDługościOdcinków = 0;

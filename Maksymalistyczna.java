@@ -1,7 +1,8 @@
 import java.util.Map;
 
-public class Maksymalistyczna extends Strategia {
+public class Maksymalistyczna extends Zachłanna {
 
+    @Override
     public Wynik rozwiążProblem(CennikPrętów cennikPrętów,
                                 OpisProjektu opisProjektu) {
         Wynik wynik = new Wynik();

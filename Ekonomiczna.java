@@ -20,7 +20,7 @@ public class Ekonomiczna extends Plecakowa {
 
     @Override
     protected void dodajKolejneDoMapy(MapaCiągów mapaCiągów, Ciąg ciąg, Pręt[] prętyZCennika, int liczbaOdcinków) {
-        if (ciąg.getSumaWartości() <= liczbaOdcinków) {
+        if (ciąg.getSumaWartości() < liczbaOdcinków) {
             int indeksNajdłuższegoPręta = ciąg.zwróćNajwiększyKlucz();
             if (indeksNajdłuższegoPręta < prętyZCennika.length - 1) {
                 Ciąg ciągSąsiadów = new Ciąg(ciąg);
